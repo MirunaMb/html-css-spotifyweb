@@ -1,0 +1,597 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+/* VARIABLES
+COMMONS */
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+:root{
+    --sidebar: #000000;
+    --header: #080B12 ;
+    --navbot: #282828 ;
+    --main: #141922;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flex-main {
+    display: flex;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;       
+}
+
+.flex-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: .8rem;
+}
+
+.flex-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-card-bot {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+
+
+/* ################################################################# */
+                        /* DESKTOP FIRST VIEW max-width: 1200px */
+/* #################################################################### */
+
+/* ALL MAIN WRAPPER */
+
+#wrapper {
+    /* max-width: 1200px; */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    /* debug */
+    /* background-color: rgb(75, 75, 12); */
+}
+
+/* -------------------------------------------------------------- */
+
+/* BOT NAV COMANDS */
+
+#nav-bot {
+    width: 100%;
+    height: 100px;
+    background-color: var(--navbot);
+    /* debug */
+    /* border: 1px solid green; */
+}
+
+#nav-bot > * {
+    margin: 10px 20px;
+    /* debug */
+    /* border: 1px solid red; */
+}
+
+#currently *, #play *, #comand *{
+    cursor: pointer;
+}
+
+
+#nav-bot #currently {
+    width: 300px;
+}
+#nav-bot #comand {
+    width: 180px;
+}
+
+#nav-bot #play{
+    width: 40%;
+    padding: 10px 0;
+    align-items: center;
+}
+
+#currently i {
+    margin: 0 10px;    
+}
+
+#comand-play ul{
+    display: flex;
+    gap: 40px;
+    margin-left: -25px;
+    align-items: center;
+}
+
+.card-bot #sinister {
+    max-width: 30%;
+    min-width: 30%;
+}
+
+.description h5 {
+    color: gray;
+}
+
+/* BONUS NAV BOT HOVER */
+
+.description h5:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#icon i:hover {
+    color: white;
+    scale: 1.2;
+}
+
+#volume {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: inline-block;
+}
+
+#under-volume{
+    width: 50px;
+    height: 3px;
+    background-color: #5f6572;
+    position: relative;
+    left: -13px;
+}
+
+#currently .description {
+    font-size: .8rem;
+}
+
+#icon {
+    display: flex;
+    
+}
+
+#progress {
+    max-width: 100%;
+}
+
+
+
+/* HO VOLUTO USARE STO TRUCCHETTO PER NON ESAURIRMI */
+.bar {
+    display: flex;
+    
+}
+#progress-bar {
+    width: 63px;
+    height: 4px;
+    background-color: white;
+    display: inline-block;
+    
+}
+
+#under-bar {
+    width: 200px;
+    height: 4px;
+    background-color: rgb(133, 100, 100);
+    position: relative;
+    left: -16px;    
+}
+
+
+
+.bar .circle {
+    height: 12px;
+    width: 12px;
+    /* display: inline-block; */
+    border: 1px solid green;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+    left: 0px;
+    top: -3px;
+    /* display: none; */
+    opacity: 0;
+}
+
+.bar:hover .circle {
+    opacity: 1;
+    z-index: 1;
+    left: -4px;
+}
+
+.bar:hover #progress-bar {
+    background-color: green;
+    width: 66px;
+}
+
+#comand .bar:hover #volume{
+    background-color: green;
+}
+
+
+
+#comand > * {
+    margin: 0 4px;
+}
+
+#comand-play .plays {
+    font-size: 1.6rem;
+}
+
+#comand-play ul:hover .plays {
+    transform: scale(1.3);
+}
+
+
+/* ------------------------------------------------------------------- */
+
+/* LEFT LATERAL BAR */
+
+#side-bar {
+    width: 200px;
+    height: 100%;
+    background-color: var(--sidebar);
+    /* debug */
+    /* border: 1px solid green; */
+}
+
+#logo-small{
+    display: none;
+}
+
+#side-bar > * {
+    color: gray;
+    
+    /* debug */
+    /* border: 1px solid red; */
+}
+
+#side-bar li a {
+    color: gray;
+}
+
+
+#side-bar a, #{
+    color: grey;
+}
+
+#menu li > img {
+    width: 30px; 
+    vertical-align: middle;
+}
+
+#side-bar .nav-top, #menu, #install {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#install > a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: gray;
+}
+
+#install div{
+    width: 30px;    
+}
+
+#install {
+    justify-self: flex-end;    
+}
+
+#download2, #user2 {
+    display: none;
+}
+
+#menu > *, #logo, #playlist  * {
+    margin: 10px 0;
+}
+
+#playlist i {
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    vertical-align: middle;    
+}
+
+#side-bar hr {
+    margin: 10px auto;
+    width: 100%;
+    color: gray;
+}
+
+
+#user img, #user2 img {
+    background-color: var(--navbot);
+    border-radius: 50%;
+    
+}
+
+/* BONUS SIDE BAR */
+
+
+#menu li:hover, .playlist li:hover{
+    border-left: 2px solid green;
+    cursor: pointer;
+}
+
+#side-bar .playlist li:hover a{
+    color: white;
+    filter: brightness(1);
+    
+}
+
+#install span:hover {
+    color: white;
+}
+
+
+
+/* --------------------------------------------------------------------*/
+
+
+/* MAIN SECTION WITH ALBUM */
+
+main {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: var(--main);
+    /* debug */
+    /* border: 1px solid peru; */
+}
+
+
+
+#main {
+    width: calc(100% - 200px);
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    /* padding: 10px 20px; */
+    /* debug */
+    /* border: 1px solid red; */
+
+}
+
+#main > *:not(header) {
+    padding: 10px 20px;
+}
+
+#main header {
+    text-align: end;
+    height: 90px;
+    line-height: 90px;
+    width: calc(100% - 200px);
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    opacity: .3;    
+    background-color: rgba(0,0,0, .5);
+    padding-right: 50px ;
+    /* debug */
+    /* border: 1px solid yellow; */
+}
+
+#main header > a {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    opacity: 1;
+    color: rgb(75, 75, 75);
+}
+
+/* BONUS HEADER */
+
+#main header > a:hover {
+    font-size: 1.3rem;
+    color: white;
+            
+}
+
+#main li, #main .subtitle {
+    color: gray;
+}
+
+#main hr {
+    opacity: 0;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid yellowgreen;
+}
+
+
+/* BONUS NAV LIST  */
+
+#head-nav li:hover{
+    color: white;
+}
+
+#head-nav li:hover hr{
+    display: block;
+    opacity: 1;
+}
+
+#main ul {
+    margin: 100px auto;
+    text-align: center;
+    
+    /* debug */
+    /* border: 1px solid black; */
+} 
+
+
+
+.row1, .row2, .row3 {
+    margin: 30px 0;
+}
+
+.card {
+    cursor: pointer;  /*for to appear hand in card*/
+    width: calc(100% / 6 - 10px);
+    position: relative;
+    /* debug */
+    /* border: 1px solid red; */
+}
+
+.card h4, .card h5 {
+    text-align: center;
+    margin: 10px 0;
+} 
+
+.row3 img {
+    border-radius: 50%;
+}
+
+
+
+.play {
+    display: none;      
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-43%, -93%);  
+    
+}
+
+/* BONUS CARD */
+
+.card:hover .play {
+    display: block;       
+}
+
+
+.card:hover img{
+    opacity: .5;
+}
+
+
+
+/* ################################################################# */
+                        /* <= 1100px VIEW  */
+/* #################################################################### */
+@media  screen and (max-width:1100px) {
+    .card {
+        width: calc(100% / 4 - 10px);
+    }
+    
+}
+
+
+
+
+/* ################################################################# */
+                        /* <=700px VIEW  */
+/* #################################################################### */
+
+
+@media  screen and (max-width:700px) {
+    .card {
+        width: calc(100% / 2 - 10px);
+    }
+    
+    .main li{
+        width: calc(100% / 3 - 10px);
+    }
+
+    #main .flex-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
+    #icon {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* ################################################################# */
+                        /* <=600px VIEW  */
+/* #################################################################### */
+
+
+@media  screen and (max-width:600px) {
+
+    #main, #main header {
+        width: calc(100% - 50px);
+    }
+    
+    #side-bar {
+        width: 50px;
+        align-items: center;
+    }   
+
+    #logo-normal {
+        display: none;
+    }
+
+    #logo-small {
+        display: block;
+        width: 30px;
+    }
+    
+    #playlist {
+        display: none;
+    }
+
+    #menu li {
+        width: 30px;
+    }
+
+    #menu li > span {
+        display: none;
+    }
+
+    #install a {
+        display: none;
+    }
+
+    #install #download2, #install #user2 {
+        width: 30px;
+        display: block;
+    }
+
+    
+
+    
+}
