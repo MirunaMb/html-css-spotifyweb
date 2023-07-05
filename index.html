@@ -4,305 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- FONTAWESOME ICON -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- CSS STYLE -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify</title>
+     <!-- FONTAWESOME ICON -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- GOOGLE FONT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
     <!-- MAIN WRAPPER FULL PAGE 100VH -->
     <div id="wrapper">
 
-        <!-- MAIN SECTION WITH SIDE NAV AND MAIN SECTION MID -->
-        <main class="flex-main">
+       <!-- MAIN SECTION WITH SIDE NAV AND MAIN SECTION MID -->
+      <main class="flex-main">
 
-            <!-- SIDE NAV BAR -->
+        <!-- SIDE NAV BAR -->
+        <section id="side-bar"></section>
+        <!-- SIDE NAV BAR -->
 
-            <section id="side-bar" class="flex-v">
-                <div class="nav-top flex-v">
-                         <!-- LOGO -->
-                    <div id="logo" >
-                        <a href="">
-                            <img id="logo-normal" src="img/logo.svg" alt="">
-                            <img id="logo-small" src="img/logo-small.svg" alt="">
-                        </a>
-                    </div>
-                    <!-- /LOGO -->
-
-                    <!-- LITTLE LATERAL MENU -->
-                    <ul id="menu">                        
-                        <li>
-                            <img src="img/home.svg" alt="">
-                            <span>HOME</span>
-                        </li>
-                        <li>
-                            <img src="img/search.svg" alt="">
-                            <span>Cerca</span>
-                        </li>
-                        <li>
-                            <img src="img/libreria.svg" alt="">
-                            <span> La tua libreria</span>
-                        </li>
-                    </ul>
-                    <!-- /LITTLE LATERAL MENU -->
-
-                    <!-- PLAYLIST -->
-                    <div id="playlist">
-
-                        <!-- TITLE LIST -->
-                        
-                        <h3>PLAYLIST</h3>
-                        <a href="">
-                            <h4><i class="fa-solid fa-plus"></i> Crea playlist</h4>
-                        </a>
-                            <!-- /TITLE LIST -->
-                                        
-                        <!-- MINILIST OF PLAYLIST -->
-                        <ul class="playlist">
-                            <li><a href="">NomePlaylist</a></li>
-                            <li><a href="">NomePlaylist</a></li>
-                            <li><a href="">NomePlaylist</a></li>
-                            <li><a href="">NomePlaylist</a></li>
-                            <li><a href="">NomePlaylist</a></li>
-                            <li><a href="">NomePlaylist</a></li>
-                        </ul>
-                        <!-- /MINILIST OF PLAYLIST -->
-
-                    </div>
-                    <!-- /PLAYLIST -->
-                </div>               
-
-                <div id="install">
-                    <a href="">
-                        <div id="download">
-                            <img src="img/download.svg" alt=""> 
-                        </div>
-                        <span> Installa app</span></h4>                            
-                    </a>
-
-                    <div id="download2">
-                        <img src="img/download.svg" alt="">
-                    </div>
-                    <hr>
-
-                    <a href="">
-                        <div id="user">
-                            <img src="img/profile.svg" alt="">
-                        </div>
-                        <span> John Snow</span></h3>
-                    </a>
-                    <div id="user2">
-                        <img src="img/profile.svg" alt="">
-                    </div>
-                </div>
-            </section>
-            <!-- /SIDE NAV BAR -->
-
-            <!-- CORE OF PAGE -->
-            <section id="main">
-                <!-- HEADER OF MAIN SECTION -->
-                <header>
-                    <a href="">EFFETTUA L'UPGRADE</a>
-                </header>
-                <!-- /HEADER OF MAIN SECTION -->
-
-                <!-- NAVIGATION MENU UNDER HEADER -->
-                <ul id="head-nav" class="flex-nav">
-                    <a href="">
-                        <li>IN EVIDENZA <hr></li>
-                    </a>
-                    <a href="">
-                    <li>PODCAST <hr></li>
-                    </a>
-                    <a href="">
-                    <li>CLASSIFICHE <hr></li>
-                    </a>
-                    <a href="">
-                        <li>GENERI E MOOD <hr></li>
-                    </a>
-                    <a href="">
-                        <li>NUOVE USCITE <hr></li>
-                    </a>
-                    <a href="">
-                        <li>SCOPRI <hr></li>
-                    </a>
-                </ul>
-                <!-- /NAVIGATION MENU UNDER HEADER -->
-
-                <!-- 1 HEAD TITLE -->
-                <h2 class="head-title">Recently played</h2>
-                <!-- /1HEAD TITLE -->
-
-                <!-- 1 ALBUM CARDS -->
-                <div class="row1">
-                    <div class="col flex-wrap">
-                        <div class="card">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fa-regular fa-circle-play play"></i>
-                            <h4 class="title">Heavy Metal</h4>
-                            <h5 class="subtitle">Subtitle</h5>
-                        </div>
-                        <div class="card">
-                            <img src="img/stranger.jpeg" alt="">
-                            <i class="fa-regular fa-circle-play play"></i>
-
-                            <h4 class="title">Stranger Things</h4>
-                            <h5 class="subtitle">Micheal Keaton</h5>
-                        </div>
-                        <div class="card">
-                            <img src="img/aquietplace.jpeg" alt="">
-                            <i class="fa-regular fa-circle-play play"></i>
-                            <h4 class="title">A quiet place</h4>
-                            <h5 class="subtitle">Subtitle</h5>
-                        </div>
-                        <div class="card">
-                            <img src="img/split.jpeg" alt="">
-                            <i class="fa-regular fa-circle-play play"></i>
-                            <h4 class="title">Split</h4>
-                            <h5 class="subtitle">Subtitle</h5>
-                        </div>
-                        <div class="card">
-                            <img src="img/cure.jpeg" alt="">
-                            <i class="fa-regular fa-circle-play play"></i>
-                            <h4 class="title">A cure of Wellness</h4>
-                            <h5 class="subtitle">Subtitle</h5>
-                        </div>
-                        <div class="card">
-                            <img src="img/sinister.jpeg" alt="">
-                            <i class="fa-regular fa-circle-play play"></i>
-                            <h4 class="title">Sinister</h4>
-                            <h5 class="subtitle">Subtitle</h5>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!-- /1ALBUM CARDS -->
-
-                <!-- 2 HEAD TITLE -->
-                <h2 class="head-title">Creato per John Snow</h2>
-                <p>Piu ascolti, piu saranno accurati i suggerimenti</p>
-                <!-- /2HEAD TITLE -->
-
-                <!-- 2 ALBUM CARDS -->
-                <div class="row2">
-                    <div class="col flex-wrap">
-                        <div class="card">
-                            <img src="img/radar.jpeg" alt="">
-                            <i class="fa-regular fa-circle-play play"></i>
-                            <h4 class="title">Release data</h4>
-                        </div>
-                        <div class="card">
-                            <img src="img/mixdaily.jpeg" alt=""> 
-                            <i class="fa-regular fa-circle-play play"></i>
-                            <h4 class="title">Daily mix</h4>                           
-                        </div>
-                                                
-                    </div>
-                </div>
-                <!-- /2ALBUM CARDS -->
-
-                <!-- 3 HEAD TITLE -->
-                <h2 class="head-title">Artisti piu popolari</h2>
-                <!-- /3 HEAD TITLE -->
-
-                <!-- 3 ALBUM CARDS -->
-                <div class="row3">
-                    <div class="col flex-wrap">
-                        <div class="card">
-                            <img src="img/youg.jpeg" alt="">
-                            <i class="fa-regular fa-circle-play play"></i>
-                            <h4 class="title">Lana Del Rey</h4>
-                        </div>
-                        <div class="card">
-                            <img src="img/einaudi.jpeg" alt="">
-                            <i class="fa-regular fa-circle-play play"></i>
-                            <h4 class="title">Ludovino Enaudi</h4>
-                        </div>
-                                                
-                    </div>
-                </div>
-                <!-- /3ALBUM CARDS -->
-                
-            </section>
-            <!-- /CORE OF PAGE -->
+        <!-- CORE OF PAGE -->
+        <section id="main"></section>
+        <!-- CORE OF PAGE -->
 
 
+      </main>
+       <!-- MAIN SECTION WITH SIDE NAV AND MAIN SECTION MID -->
 
-
-        </main>
-        <!-- /MAIN SECTION WITH SIDE NAV AND MAIN SECTION MID -->
-
-
-
-        <!-- BOTTOM NAVIGATOR -->
-        <nav id="nav-bot" class="flex-bot">
-            <div id="currently" class="flex-bot">
-                <div class="card-bot flex-card-bot">
-                    <div id="sinister">
-                        <img src="img/sinister.jpeg" alt="">
-                    </div>
-                    <div class="description">
-                        <h4 class="title-bot">Sinister</h4>
-                        <h5 class="sub-bot">Brano nome</h5>
-                    </div>
-
-                </div>
-                <span id="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
-                </span>
-            </div>
-            <div id="play" class="flex-v">
-                <div id="comand-play">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-shuffle"></i>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-backward-step"></i>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-play plays"></i>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-forward-step"></i>
-                        </li>
-                    </ul>
-                </div>
-                <div id="progress" class="flex-card-bot" > 
-                    <h5>0:25</h5>
-                    <div class="bar">
-                        <div id="progress-bar"></div>
-                        <span class="circle"></span>
-                        <div id="under-bar" ></div>
-                    </div>
-                    <h5>4:35</h5>
-                </div>
-            </div>
-            <div id="comand" class="flex-card-bot">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-desktop"></i>
-                <i class="fa-solid fa-volume-high"></i>
-                <div class="bar">
-                    <div id="volume"></div>
-                    <span class="circle"></span>
-                    <div id="under-volume"></div>
-                </div>
-            </div>            
-        </nav>
-        <!-- /BOTTOM NAVIGATOR -->
+       <!-- BOTTOM NAVIGATOR -->
+       <nav id="nav-bot"></nav>
+       <!-- BOTTOM NAVIGATOR -->
+    
+        
     </div>
-    <!-- /MAIN WRAPPER FULL PAGE 100VH -->
-
-
-
+    <!-- MAIN WRAPPER FULL PAGE 100VH -->
     
 </body>
 </html>
