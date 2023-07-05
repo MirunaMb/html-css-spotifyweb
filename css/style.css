@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -76,6 +81,8 @@ img {
     background-color: black;
 }
 /* --------------------------HEADER------------------------------------ */
+
+
 /* BOTTOM NAV */
 #nav-bot{
     width: 100%;
