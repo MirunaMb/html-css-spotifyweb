@@ -19,14 +19,70 @@ img {
     max-width: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 :root{
     --sidebar: #000000;
     --header: #080B12 ;
     --navbot: #282828 ;
     --main: #141922;
 }
+
+/* ################################################################# */
+                        /* DESKTOP FIRST VIEW max-width: 1200px */
+/* #################################################################### */
+
+/* ALL MAIN WRAPPER */
+
+#wrapper {
+    /* max-width: 1200px; */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: blue;
+    /* debug */
+    /* background-color: rgb(75, 75, 12); */
+}
+
+/* --------------------------WRAPPER------------------------------------ */
+
+/* FLEX-MAIN */
+.flex-main{
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color:palevioletred;
+    
+}
+/* --------------------------FLEX-MAIN------------------------------------ */
+
+/* SIDE BAR */
+#side-bar{
+    width: 200px;
+    height: 100%;
+    background-color: aqua;
+}
+/* --------------------------SIDE BAR------------------------------------ */
+
+/* MAIN */
+#main{
+    width: calc(100% - 200px);
+    height:100%;
+    background-color: brown;
+}
+/* --------------------------MAIN------------------------------------ */
+/* HEADER */
+#main .header{
+    width: calc(100% - 200px);
+    height: 90px;
+    background-color: black;
+}
+/* --------------------------HEADER------------------------------------ */
+/* BOTTOM NAV */
+#nav-bot{
+    width: 100%;
+    height: 100px;
+    background-color: darkgreen;
+}
+/* --------------------------BOTTOM-NAV------------------------------------ */
+
+
+
+
