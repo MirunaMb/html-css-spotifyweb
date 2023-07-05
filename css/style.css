@@ -49,6 +49,7 @@ img {
     width: 100%;
     height: calc(100% - 100px);
     background-color:palevioletred;
+    display: flex;
     
 }
 /* --------------------------FLEX-MAIN------------------------------------ */
