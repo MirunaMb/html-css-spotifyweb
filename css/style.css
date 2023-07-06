@@ -180,8 +180,44 @@ ul {
 /* HEAD TITLE */
 .head-title{
     color: aliceblue;
+    margin: 70px 20px;
+}
+/*  1 ALBUM CARDS */
+.card img{
+    width: 250px;
+}
+.title{
+   font-size: 25px;
+}
+.card h4, .card h5 {
+    text-align: center;
+    margin: 10px 0;
+} 
+.card {
+    cursor: pointer;  
+    width: calc(100% / 6 - 20px);
+    position: relative;
+}
+.card:hover .play {
+    display: block;       
+}
+.card:hover img{
+    opacity: .5;
+}
+
+.row1{
     margin-left: 20px;
 }
+.play {
+    display: none;      
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -93%);  
+    
+}
+
 
 /* --------------------------MAIN------------------------------------ */
 /* HEADER */
