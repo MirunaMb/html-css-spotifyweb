@@ -105,7 +105,8 @@ ul {
 #side-bar{
     width: 200px;
     height: 100%;
-    background-color: aqua;
+    background-color: var(--sidebar);
+    display: grid;
 }
 #side-bar > * {
     color: gray;
@@ -129,21 +130,64 @@ ul {
     left: 2px;
     margin-top: 10px;
 }
+#user{
+    display: flex;
+}
+#nameuser{
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+}
+#user img {
+    background-color:gray;
+    border-radius: 50%;
+    width: 34px;  
+    aspect-ratio: 1;
+    
+}
+#install{
+    justify-self: flex-end;
+}
 /* --------------------------SIDE BAR------------------------------------ */
 
 /* MAIN */
 #main{
     width: calc(100% - 200px);
     height:100%;
-    background-color: brown;
+    background-color: var(--main);
+    overflow-y: auto;
+    position: relative;
 }
 /* --------------------------MAIN------------------------------------ */
 /* HEADER */
-#main .header{
-    width: calc(100% - 200px);
-    height: 90px;
-    background-color: black;
-}
+#main header{
+        text-align: end;
+        height: 90px;
+        line-height: 90px;
+        width: calc(100% - 200px);
+        position: fixed;
+        z-index: 998;
+        top: 0;
+        opacity: .3;    
+        background-color: rgba(0,0,0, .5);
+        padding-right: 50px ;
+        /* debug */
+        /* border: 1px solid yellow; */
+    }
+    
+    #main header > a {
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 10px 20px;
+        opacity: 1;
+        color: rgb(75, 75, 75);
+    }
+    #main header > a:hover {
+        font-size: 1.3rem;
+        color: white;
+                
+    }
+
 /* --------------------------HEADER------------------------------------ */
 
 
