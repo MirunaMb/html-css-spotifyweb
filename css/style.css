@@ -6,9 +6,9 @@
     box-sizing: border-box;
 }
 
-a {
+*{
     text-decoration: none;
-    color: white;
+    color: grey;
 }
 
 body{
@@ -158,6 +158,31 @@ ul {
     overflow: auto;
     position: relative;
 }
+/* NAVIGATION MENU UNDER HEADER */
+#head-nav{
+    margin-top: 5%;
+}
+#head-nav li:hover{
+    color: white;
+}
+#head-nav hr:hover{
+    color: green;
+}
+
+#head-nav li:hover hr{
+    display: block;
+    opacity: 1;
+}
+#main ul {
+    margin: 100px auto;
+    text-align: center;
+}
+/* HEAD TITLE */
+.head-title{
+    color: aliceblue;
+    margin-left: 20px;
+}
+
 /* --------------------------MAIN------------------------------------ */
 /* HEADER */
 #main header{
@@ -284,9 +309,6 @@ ul {
     max-width: 100%;
 }
 
-
-
-/* HO VOLUTO USARE STO TRUCCHETTO PER NON ESAURIRMI */
 .bar {
     display: flex;
     
