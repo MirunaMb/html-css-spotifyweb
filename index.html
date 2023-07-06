@@ -1,88 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-     <!-- FONTAWESOME ICON -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- GOOGLE FONT -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- LINK CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <!-- MAIN WRAPPER FULL PAGE 100VH -->
     <div id="wrapper">
 
-       <!-- MAIN SECTION WITH SIDE NAV AND MAIN SECTION MID -->
-      <main class="flex-main">
+        <!-- MAIN SECTION WITH SIDE NAV AND MAIN SECTION MID -->
+        <main class="flex-main">
 
-        <!-- SIDE NAV BAR -->
-        <section id="side-bar">
-            <div class="nav-top"></div>
-            <div class="install">
-                <!-- LOGO -->
-                <div class="logo">
-                    <a href="">
-                    <img id="logo-normal" src="./spotify/img/logo.svg">
-                    <img id="logo-smal" src="./spotify/img/logo-small.svg">
-                    </a>
+            <!-- SIDE NAV BAR -->
+            <section id="side-bar">
+                <div class="nav-top"></div>
+                <div class="install">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <a href="">
+                            <img id="logo-normal" src="./spotify/img/logo.svg">
+                            <img id="logo-smal" src="./spotify/img/logo-small.svg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- SIDE NAV BAR -->
+
+            <!-- CORE OF PAGE -->
+            <section id="main">
+                <!-- HEADER OF MAIN SECTION -->
+                <header>
+                    <a href="">EFFETTUA L'UPGRADE</a>
+                </header>
+                <!-- /HEADER OF MAIN SECTION -->
+            </section>
+            <!-- CORE OF PAGE -->
+
+
+        </main>
+        <!-- MAIN SECTION WITH SIDE NAV AND MAIN SECTION MID -->
+
+        <!-- BOTTOM NAVIGATOR -->
+        <!-- first collumn -->
+        <nav id="nav-bot">
+            <div id="currently" class="flex-bot">
+                <div class="card-bot flex-card-bot">
+                    <div id="sinister">
+                        <img src="./spotify/img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="description">
+                        <h4 class="title-bot">Sinister</h4>
+                        <h5 class="sub-bot">Brano nome</h5>
+                    </div>
+                </div>
+                <span id="icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </span>
+            </div>
+            <!-- second collumn -->
+            <div id="play" class="flex-v">
+                <div id="comand-play">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-backward-step"></i>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-play plays"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-forward-step"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div id="progress" class="flex-card-bot" > 
+                    <h5>0:25</h5>
+                    <div class="bar">
+                        <div id="progress-bar"></div>
+                        <span class="circle"></span>
+                        <div id="under-bar" ></div>
+                    </div>
+                    <h5>4:35</h5>
                 </div>
             </div>
-        </section>
-        <!-- SIDE NAV BAR -->
-
-        <!-- CORE OF PAGE -->
-        <section id="main">
-            <!-- HEADER OF MAIN SECTION -->
-            <header>
-                <a href="">EFFETTUA L'UPGRADE</a>
-            </header>
-            <!-- /HEADER OF MAIN SECTION -->
-        </section>
-        <!-- CORE OF PAGE -->
 
 
-      </main>
-       <!-- MAIN SECTION WITH SIDE NAV AND MAIN SECTION MID -->
+    </div>
 
-       <!-- BOTTOM NAVIGATOR -->
-       <nav id="nav-bot">
-        <div id="currently">
-            <div class="card-bot">
-                <div id="sinister">
-                    <img src="./spotify/img/sinister.jpeg" alt="">
-                </div>
-                <div class="description" >
-                    <h4 class="title-bot">Sinister</h4>
-                    <h5 class="sub-bot">Brano nome</h5>
-                </div>
-            </div>
-            <span id="icon">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
-            </span>
-        </div>
+    </nav>
+    <!-- BOTTOM NAVIGATOR -->
 
-       </nav>
-       <!-- BOTTOM NAVIGATOR -->
-    
-        
+
     </div>
     <!-- MAIN WRAPPER FULL PAGE 100VH -->
-    
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-

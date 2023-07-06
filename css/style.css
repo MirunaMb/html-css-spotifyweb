@@ -89,6 +89,38 @@ img {
     height: 100px;
     background-color: darkgreen;
 }
+#nav-bot > * {
+    margin: 10px 20px;
+    border: 1px solid red;
+}
+#nav-bot #currently {
+    width: 300px;
+}
+.card-bot #sinister {
+    max-width: 30%;
+    min-width: 30%;
+}
+.flex-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-card-bot {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+#currently .description {
+    font-size: 0.8rem;
+}
+#icon{
+    display: flex;
+}
+#currently i {
+    margin: 0 10px;    
+}
 /* --------------------------BOTTOM-NAV------------------------------------ */
 
 
