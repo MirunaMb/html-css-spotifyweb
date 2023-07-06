@@ -215,10 +215,14 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-75%, -93%);  
-    
 }
-
-
+/* <!-- 2 HEAD TITLE --> */
+#head-title{
+    margin: 70px 0px 20px 20px;
+}
+#paragraph-title{
+    margin-left: 20px;
+}
 /* --------------------------MAIN------------------------------------ */
 /* HEADER */
 #main header{
