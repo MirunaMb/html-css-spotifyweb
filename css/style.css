@@ -95,7 +95,7 @@ ul {
 .flex-main{
     width: 100%;
     height: calc(100% - 100px);
-    background-color:palevioletred;
+    background-color:var(--main);
     display: flex;
     
 }
@@ -155,7 +155,7 @@ ul {
     width: calc(100% - 200px);
     height:100%;
     background-color: var(--main);
-    overflow-y: auto;
+    overflow: auto;
     position: relative;
 }
 /* --------------------------MAIN------------------------------------ */
