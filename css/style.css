@@ -111,6 +111,12 @@ ul {
 #side-bar > * {
     color: gray;
 }
+.nav-top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
 #playlist > *{
     color: gray;
     line-height: 40px;
@@ -146,7 +152,7 @@ ul {
     
 }
 #install{
-    justify-self: flex-end;
+    margin-top: auto;
 }
 /* --------------------------SIDE BAR------------------------------------ */
 
@@ -192,6 +198,7 @@ ul {
 .card h4, .card h5 {
     text-align: center;
     margin: 10px 0;
+    color:white;
 } 
 .card {
     cursor: pointer;  
@@ -208,6 +215,13 @@ ul {
 .row1{
     margin-left: 20px;
 }
+.row2, .row3{
+    margin: 20px;
+}
+.row3 img {
+    border-radius: 50%;
+}
+
 .play {
     display: none;      
     font-size: 5rem;
@@ -415,6 +429,20 @@ ul {
 }
 
 /* --------------------------BOTTOM-NAV------------------------------------ */
+
+
+
+/* ################################################################# */
+                        /* <= 1100px VIEW  */
+/* #################################################################### */
+@media  screen and (max-width:1100px) {
+    .card {
+        width: calc(100% / 4 - 10px);
+    }
+    
+}
+
+
 
 
 
